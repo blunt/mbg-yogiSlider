@@ -68,8 +68,8 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
-    background: $dark;
-    color: $purple;
+    background: $blue;
+    color: $yellowNew;
     font-family: $med;
     font-size: #{"clamp(20px, 5vw, 25px)"};
     line-height: 1;
@@ -95,8 +95,8 @@ html, body {
         opacity: 1;
         font-size: 20px;
         &.swiper-pagination-bullet-active {
-            color: $yellow;
-            border-color: $yellow;
+            color: $yellowNew;
+            border-color: $yellowNew;
         }
     }
 }
@@ -112,20 +112,26 @@ html, body {
     }
     .yogiSlider__panel--questions__count {
         position: absolute;
-        top: 30px;
-        right: 30px;
-        width:  75px; 
-        height: 75px;
+        top: 60px;
+        right: -30px;
+        width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid $purple;
-        border-radius: 100%;
-        color: $purple;
+        color: $yellowNew;
         font-family: $med;
         font-size: 20px;
+        .yogiSlider__panel--questions__count--number {
+            position: relative;
+            z-index: 100;
+            transform: translateY(-5px);
+        }
+        img {
+            position: absolute;
+        }
     }
     .yogiSlider__panel--questions__title {
+        position: relative;
         margin-bottom: #{"clamp(10px, 5vw, 20px)"};
         color: $pink;
         font-family: $med;
@@ -173,13 +179,17 @@ html, body {
         width: 130px;
         height: 30px;
         padding: 0;
-        background: 0;
-        border: 2px solid $pink;
+        background: $blue;
+        border: 2px solid $blue;
         border-radius: 30px;
-        color: $pink;
+        color: $yellowNew;
         font-family: $med;
         font-size: 14px;
         text-transform: uppercase;
+        &:hover {
+            background: none;
+            color: $blue;
+        }
     }
 }
 
@@ -269,13 +279,17 @@ html, body {
         width: 130px;
         height: 30px;
         padding: 0;
-        background: 0;
-        border: 2px solid $beige;
+        background: $yellowNew;
+        border: 2px solid $yellowNew;
         border-radius: 30px;
-        color: $beige;
+        color: $purple;
         font-family: $med;
         font-size: 14px;
         text-transform: uppercase;
+        &:hover {
+            background: none;
+            color: $yellowNew;
+        }
     }
     .yogiSlider__panel--actions__rewind {
         width: 200px;

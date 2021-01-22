@@ -627,8 +627,8 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 30px;
-  background: #1E1E1E;
-  color: #A74E8B;
+  background: #0C1C5C;
+  color: #FFBF52;
   font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(20px, 5vw, 25px);
   line-height: 1; }
@@ -677,10 +677,9 @@ html, body {
       padding: 80px 100px; } }
   .yogiSlider__panel--questions .yogiSlider__panel--questions__count {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 75px;
-    height: 75px;
+    top: 60px;
+    right: -30px;
+    width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,12 +689,19 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 2px solid #A74E8B;
-    border-radius: 100%;
-    color: #A74E8B;
+    color: #FFBF52;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px; }
+    .yogiSlider__panel--questions .yogiSlider__panel--questions__count .yogiSlider__panel--questions__count--number {
+      position: relative;
+      z-index: 100;
+      -webkit-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+              transform: translateY(-5px); }
+    .yogiSlider__panel--questions .yogiSlider__panel--questions__count img {
+      position: absolute; }
   .yogiSlider__panel--questions .yogiSlider__panel--questions__title {
+    position: relative;
     margin-bottom: clamp(10px, 5vw, 20px);
     color: #CC2497;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -756,13 +762,16 @@ html, body {
     width: 130px;
     height: 30px;
     padding: 0;
-    background: 0;
-    border: 2px solid #CC2497;
+    background: #0C1C5C;
+    border: 2px solid #0C1C5C;
     border-radius: 30px;
-    color: #CC2497;
+    color: #FFBF52;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase; }
+    .yogiSlider__panel--questions .yogiSlider__panel--questions__scroll:hover {
+      background: none;
+      color: #0C1C5C; }
 
 .yogiSlider__panel--actions {
   position: relative;
@@ -861,13 +870,16 @@ html, body {
     width: 130px;
     height: 30px;
     padding: 0;
-    background: 0;
-    border: 2px solid #FFDB98;
+    background: #FFBF52;
+    border: 2px solid #FFBF52;
     border-radius: 30px;
-    color: #FFDB98;
+    color: #A74E8B;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase; }
+    .yogiSlider__panel--actions .yogiSlider__panel--actions__next:hover, .yogiSlider__panel--actions .yogiSlider__panel--actions__rewind:hover {
+      background: none;
+      color: #FFBF52; }
   .yogiSlider__panel--actions .yogiSlider__panel--actions__rewind {
     width: 200px; }
 
